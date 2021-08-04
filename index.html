@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa do Mundo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    .titulosite {
+        background-color: #03009b;
+        color: #d2fcc8;
+        padding: 20px;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 65px;
+        text-align: center;
+    }
+
+    .barranav {
+        overflow: hidden;
+        background-color: #112d4e;
+    }
+
+    .barranav a {
+        float:left;
+        display:block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 14px;
+    }
+
+    .barranav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .coluna {
+        float: left;
+        padding: 10px;
+    }
+
+    .coluna.lateral {
+        width: 25%;
+    }
+    table {
+        width: 70%;
+        margin: 30px;
+        color: #03009b;
+        font-family: 'Montserrat', sans-serif; 
+        text-align: center;
+    }
+    table, th, td {
+	padding: 10px;
+    border-collapse: collapse;
+    border-bottom: 1px solid #03009b;
+    }
+
+    th {
+        background-color: rgb(2, 252, 252);
+    }
+
+    .coluna.meio {
+        background-color: #ffffff;
+        color: #000000;
+        width: 50%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .rodape {
+        background-color: #dbe2ef;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        text-align: center;
+        clear: both;
+    }
+
+    /* layout Responsivo */
+        @media screen and (max-width: 600px) {
+        .coluna.lateral, .coluna.meio {
+            width: 100%;
+            font-size: 50px;
+        }
+
+        .barranav a {
+            font-size: 18px;
+        }  
+    }
+
+</style>
+<body>
+    <div class="titulosite">
+        <h1>Copa do Mundo FIFA</h1>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Principal</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.fifa.com/tournaments/mens/worldcup" target="_blank">Fifa World Cup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA" target="_blank">Copa do Mundo - Wikipedia</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Que ano
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1930" target="_blank"></href>Copa 1930</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1934" target="_blank"></href>Copa 1934</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1938" target="_blank"></href>Copa 1938</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1950" target="_blank"></href>Copa 1950</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1954" target="_blank"></href>Copa 1954</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1958" target="_blank"></href>Copa 1958</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1962" target="_blank"></href>Copa 1962</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1966" target="_blank"></href>Copa 1966</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1970" target="_blank"></href>Copa 1970</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1974" target="_blank"></href>Copa 1974</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1978" target="_blank"></href>Copa 1978</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1982" target="_blank"></href>Copa 1982</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1986" target="_blank"></href>Copa 1986</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1990" target="_blank"></href>Copa 1990</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1994" target="_blank"></href>Copa 1994</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_1998" target="_blank"></href>Copa 1998</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2002" target="_blank"></href>Copa 2002</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2006" target="_blank"></href>Copa 2006</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2010" target="_blank"></href>Copa 2010</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2014" target="_blank"></href>Copa 2014</a></li>
+                  <li><a class="dropdown-item" href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2018" target="_blank"></href>Copa 2018</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Busca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img1.jpg" class="d-block w-100" alt="...">
+            </div>
+        <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img2.jpg" class="d-block w-100" alt="...">
+            </div>
+        <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img58.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Campeão</h1>
+                    <p>Copa do Mundo 1958 em Suecia.</p>
+                  </div>
+            </div>
+        <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img62.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>BiCampeão</h1>
+                    <p>Copa do Mundo 1962 em Chile.</p>
+                  </div>
+            </div>
+        <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img70.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>TriCampeão</h1>
+                    <p>Copa do Mundo 1970 em Mexico.</p>
+                  </div>
+            </div>
+        <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img94.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>TetraCampeão</h1>
+                    <p>Copa do Mundo 1994 em Estados Unidos da America.</p>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="C:\Users\Sartori\Pictures\Saved Pictures\img2002.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>PentaCampeão</h1>
+                    <p>Copa do Mundo 2002 em Coreia do Sul e Japão.</p>
+                  </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <div class="barranav">
+    </div>
+
+    <div class="coluna lateral">
+        <h2>Titulos</h2>
+        <h3>Por seleções</h3>
+        <table>
+            <tr><th>País</th><th>Titulos</th></tr>
+            <tr><td>Brasil</td><td>5</td></tr>
+            <tr><td>Italia</td><td>4</td></tr>
+            <tr><td>Alemanha</td><td>4</td></tr>
+            <tr><td>Argentina</td><td>2</td></tr>
+            <tr><td>França</td><td>2</td></tr>
+            <tr><td>Uruguai</td><td>2</td></tr>
+            <tr><td>Inglaterra</td><td>1</td></tr>
+            <tr><td>Espanha</td><td>1</td></tr>
+        </table>
+    </div>
+
+    <div class="coluna meio">
+        <h2>Bem vindo</h2>
+	<h3>O que significa Copa do Mundo FIFA</h3>
+
+        <p>Copa do Mundo FIFA, mais conhecida no Brasil pelo nome de Copa do Mundo e também conhecida em Portugal como Campeonato do Mundo de Futebol, Campeonato Mundial de Futebol, Campeonato Mundial FIFA, ou simplesmente Mundial, é uma competição internacional de futebol que ocorre a cada quatro anos, com exceção de 1942 e 1946, quando não foi realizado por causa da Segunda Guerra Mundial. Essa competição, criada em 1928 na França, sob a liderança do presidente Jules Rimet, está aberta a todas as federações reconhecidas pela FIFA (Federação Internacional de Futebol Associado, em francês: Fédération International de Football Association). O antigo nome da taça faz referência a Jules Rimet. A primeira edição ocorreu em 1930 no Uruguai, cuja seleção saiu vencedora.
+        </p>
+
+        <p>Com exceção da Copa do Mundo de 1930, o torneio sempre foi realizado em duas fases. Organizada pelas confederações continentais, as Eliminatórias da Copa do Mundo permitem que as melhores seleções de cada continente participem da competição, que ocorre em um ou mais países-sede.
+        </p>
+
+	<p>Devido ao sucesso dos torneios olímpicos de futebol, a FIFA, liderada pelo seu presidente Jules Rimet, novamente começou a organizar seu próprio torneio internacional fora das Olimpíadas. Em 28 de maio de 1928, o Congresso da FIFA em Amsterdã decidiu realizar um campeonato mundial. Por ser o então bicampeão olímpico de futebol e comemorando o centenário de sua independência em 1930, a FIFA nomeou o Uruguai como país-sede da primeira Copa do Mundo.</p>
+    </div>
+
+    <div class="coluna lateral">
+        <h2>Proximas Copas</h2>
+        <p>A Copa do Mundo FIFA de 2022 será a vigésima segunda (22) edição deste evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol (FIFA), que ocorrerá no Catar.
+            o campeonato será disputado entre 21 de novembro e 18 de dezembro, primeira vez em que é disputado no final do ano.</p>
+	<a href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2022"><p>Copa 2022</p></a>
+
+        <p>A Copa do Mundo FIFA de 2026 será a vigésima terceira edição deste evento esportivo, um torneio internacional de futebol masculino organizado pela Federação Internacional de Futebol (FIFA). Ocorrerá no EUA/Canada/Mexico. O Torneio será disputado entre junho e julho.</p>
+	<a href="https://pt.wikipedia.org/wiki/Copa_do_Mundo_FIFA_de_2026"><p>Copa 2026</p></a>
+    </div>
+
+    <div class="rodape">
+        <p>Copyrithy &copy; 2021 - Copa do Mundo FIFA</p>
+    </div>
+</body>
+</html>
